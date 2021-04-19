@@ -5,6 +5,13 @@ input.onButtonPressed(Button.A, function () {
         music.stopAllSounds()
     }
 })
+input.onButtonPressed(Button.AB, function () {
+    if (gatorParticle.heartbeat(HeartbeatType.BPM) > 85) {
+        music.startMelody(music.builtInMelody(Melodies.Nyan), MelodyOptions.Once)
+    } else {
+        music.stopAllSounds()
+    }
+})
 input.onButtonPressed(Button.B, function () {
     if (input.lightLevel() > 50) {
         music.startMelody(music.builtInMelody(Melodies.Dadadadum), MelodyOptions.Once)
@@ -12,3 +19,4 @@ input.onButtonPressed(Button.B, function () {
         music.stopAllSounds()
     }
 })
+gatorParticle.begin()

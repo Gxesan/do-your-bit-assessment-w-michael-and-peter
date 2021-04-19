@@ -4,7 +4,8 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "gatorParticle": "github:sparkfun/pxt-gator-particle#v1.1.3"
     },
     "files": [
         "main.blocks",
